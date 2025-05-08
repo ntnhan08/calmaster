@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Master</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container main-menu">
+        <h1 class="neon-title">MATH MASTER</h1>
+
+        <!-- Nút chọn độ khó -->
+        <div class="difficulty-buttons">
+            <button data-difficulty="easy" class="glow-btn holographic">
+                <i class="fas fa-smile-beam"></i>
+                <span>EASY</span>
+            </button>
+            <button data-difficulty="medium" class="glow-btn holographic">
+                <i class="fas fa-meh"></i>
+                <span>MEDIUM</span>
+            </button>
+            <button data-difficulty="hard" class="glow-btn holographic">
+                <i class="fas fa-fire-alt"></i>
+                <span>HARD</span>
+            </button>
+        </div>
+
+        <!-- Cài đặt thời gian -->
+        <div class="time-setting holographic">
+            <div class="time-header">
+                <i class="fas fa-clock"></i>
+                <span>Thời gian/câu: </span>
+                <span id="timeValue">15</span>s
+            </div>
+            <input type="range" id="timeRange" min="5" max="60" value="15" class="glow-slider">
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

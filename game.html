@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Battle</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container game-container holographic" id="gameContainer">
+        <div class="game-header">
+            <div class="score-box holographic">
+                <i class="fas fa-star"></i>
+                <span id="currentScore">0</span>
+            </div>
+            
+            <div class="timer-box holographic">
+                <div class="time-bar" id="timeBar"></div>
+                <i class="fas fa-hourglass-half"></i>
+            </div>
+        </div>
+
+        <div class="question-box floating" id="questionBox"></div>
+        
+        <div class="input-container holographic">
+            <input type="number" id="answerInput" placeholder="Nhập đáp án..." autofocus>
+            <i class="fas fa-keyboard"></i>
+        </div>
+
+        <button id="backButton" class="icon-btn glow-btn">
+            <i class="fas fa-home"></i>
+        </button>
+
+        <canvas id="particlesCanvas"></canvas>
+    </div>
+
+    <!-- Màn hình kết thúc -->
+    <div class="lose-screen holographic">
+        <div class="lose-content">
+            <h2 class="neon-title">GAME OVER!</h2>
+            <div class="result-info">
+                <p><i class="fas fa-trophy"></i> Điểm: <span id="finalScore">0</span></p>
+                <p class="correct-answer"><i class="fas fa-lightbulb"></i> Đáp án: <span id="correctAnswerValue"></span></p>
+            </div>
+            <div class="action-buttons">
+                <button id="restartButton" class="icon-btn glow-btn">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/sounds.js"></script>
+    <script src="assets/particles.js"></script>
+    <script src="assets/game.js"></script>
+</body>
+</html>
